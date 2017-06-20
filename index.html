@@ -1,37 +1,206 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-<meta charset="utf-8">
-<title>Video.js 5.18.4</title>
-	<link href="css/video-js.css" rel="stylesheet">
-	<!-- If you'd like to support IE8 -->
-	<script src="js/videojs-ie8.min.js"></script>
-	<style>
-		body{background-color: #191919}
-		.m{ width: 640px; height: 264; margin-left: auto; margin-right: auto; margin-top: 100px; }
-	</style>
-</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>直播帮</title>
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
+</head>
 <body>
-	<div class="m">
-		<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-		  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-			<source src="rtmp://zhibo.hkstv.tv/livestream/mutfysrq&autostart=true&skin=liveWhite" >
-			
-			<p class="vjs-no-js">
-			  To view this video please enable JavaScript, and consider upgrading to a web browser that
-			  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-			</p>
-		  </video>
-		  <script src="http://vjs.zencdn.net/5.18.4/video.min.js"></script>	
-		  <script type="text/javascript">
-			var myPlayer = videojs('my-video');
-			videojs("my-video").ready(function(){
-				var myPlayer = this;
-				myPlayer.play();
-			});
-		</script>
-	</div>
+<nav class="my-nav navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container my-head">
+        <div class="navbar-header my-logo">
+            <a class="navbar-brand" href="javascript:;">
+                <img alt="Brand" class="img-responsive" src="img/zbb-logo.png">
+            </a>
+        </div>
+        <button class="navbar-toggle my-but" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="my-info pull-right hidden-xs">
+            <span class="glyphicon glyphicon glyphicon-envelope"></span>
+            <a class="my-email" href="email:szr125@163.com">szr125@163.com</a>
+            <span class="glyphicon glyphicon-phone"></span>
+            <a class="my-tel" href="tel:+86 13927472515">+86 13927472515</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-right">
+                <li>
+                    <a id="navon0" href="#item1" class="active">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                </li>
+                <li>
+                    <a id="navon1" href="#item2">业务介绍</a>
+                </li>
+                <li>
+                    <a id="navon2" href="#item3">案&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例</a>
+                </li>
+                <li>
+                    <a id="navon3" href="#item4">关于我们</a>
+                </li>
+                <li>
+                    <a id="navon4" href="#item5">联系方式</a>
+                </li>
+                <!--<li>
+                    <a id="navon4" href="javascript:void(0)">联系方式</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<img src="img/tout.jpg" class="img-responsive center-block">-->
+<div id="content" class="container">
+    <div id="item1" class="item row">
+        <img src="img/tt.jpg" class="img-responsive center-block">
+        <div class="jumbotron col-md-7 col-xs-8 my-tt">
+            <h1>直播, 我帮你!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, eius.</p>
+            <p class="hidden-xs"><a class="my-btn btn btn-primary btn-lg" href="#item4" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <!--业务介绍-->
+    <div id="item2" class="item row">
+        <div class="col-sm-12 my-title-big"><h1 class="my-title-big-t">业务介绍</h1></div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon1.png" class="my-img img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">高清直播</h3>
+                    <p class="my-title-m">专业摄像机加下编解码器<br>进行高质量的现场直播</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon2.png" class="my-img img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">VR直播</h3>
+                    <p class="my-title-m">利用VR摄像机进行360度VR直播<br>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon3.png" class="my-img img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">手机直播</h3>
+                    <p class="my-title-m">利用手机随时随地开展直播<br>方便、快速</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon4.png" class="my-img img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">移动直播</h3>
+                    <p class="my-title-m">在户外运动时进行移动直播<br>如：滑雪、长跑等运动</p>
+                </div>
+            </div>
+        </div>
+        <!--直播平台-->
+        <div class="col-sm-12 my-title-big"><h1 class="my-title-big-t">主要直播平台</h1></div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/1.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/2.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/3.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/4.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/5.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/6.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/7.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/8.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/9.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/10.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/11.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/12.jpg" alt="...">
+            </a>
+        </div>
+    </div>
+    <div id="item3" class="item row">&nbsp;&nbsp;</div>
+    <div id="item4" class="item row">&nbsp;&nbsp;</div>
+    <div id="item5" class="item row">&nbsp;&nbsp;</div>
+</div>
+
+
+
+
+<!--<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-md-4">
+            <h2 class="page-header">区域一</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat pariatur non quisquam autem
+                reprehenderit velit culpa omnis molestias, mollitia assumenda quae expedita dignissimos similique
+                eligendi, harum, distinctio facere recusandae explicabo!</p>
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <h2 class="page-header">区域二</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat pariatur non quisquam autem
+                reprehenderit velit culpa omnis molestias, mollitia assumenda quae expedita dignissimos similique
+                eligendi, harum, distinctio facere recusandae explicabo!</p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <h2 class="page-header">区域三</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat pariatur non quisquam autem
+                reprehenderit velit culpa omnis molestias, mollitia assumenda quae expedita dignissimos similique
+                eligendi, harum, distinctio facere recusandae explicabo!</p>
+        </div>
+    </div>
+</div>-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/nav.js"></script>
 
 </body>
 </html>

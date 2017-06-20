@@ -1,0 +1,138 @@
+body {
+    padding-top: 97px;
+    font-family: "微软雅黑";
+    /*background:url(../img/tout.jpg) no-repeat center top;*/
+}
+.my-nav{
+    background-color: #fdfdfd;
+    box-shadow: 0px 3px 5px #cfcfcf;
+}
+.my-logo{
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 45px;
+}
+.my-but{
+    margin-top: 30px;
+}
+.my-head{
+    position: relative;
+}
+.my-info{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.my-info .my-email{
+    padding-right: 10px;
+    color: #888;
+}
+.my-info .my-tel{
+    color: #888;
+}
+#menu li a{
+    font-size: 16px;
+    color: #333;
+}
+#menu li a.active{
+    color: #ff8b16;
+    /*border-bottom: 2px solid orangered;*/
+}
+#menu li a:hover,#menu li a:focus{
+    color: #ff8b16;
+    background-color: transparent;
+}
+
+#item3,#item4,#item5{
+    height: 700px;}
+#item1{position: relative;}
+.my-tt{
+    position: absolute;
+    top: 160px;
+    background-color:rgba(0,0,0,0);
+    padding-top: 0px;
+}
+.my-btn{
+    width: 170px;
+    background-image: linear-gradient(to top, #ff6e0e 0%, #ffa415 100%);
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(1, 2, 2, 0.1);
+    color: #fff;
+    display: block;
+    text-align: center;
+    box-shadow: 0 10px 22px rgba(211, 146, 8, 0.27);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: #E56E02;
+}
+.my-btn:hover{
+    border-color: rgba(0,0,0,0);
+    text-decoration: underline;
+ }
+#item2,#item3,#item4,#item5{
+    margin-top: 60px;
+}
+#item2 .my-slt{
+    border: hidden;
+}
+#item2 .my-title-big{
+    margin-bottom: 60px;
+}
+#item2 .my-title,.my-title-big-t,.my-title-m{
+    text-align: center;
+}
+#item2 .my-title-m{
+    margin-top: 30px;
+}
+#item2 .my-img{
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #c9c9c9;
+    background-color: #ddd;
+    transition: 0.8s;
+}
+#item2 .my-slt:hover .my-img{
+    background-color: #ff8b16;
+    transform: translateZ(30px) scale(1) rotateY(360deg);
+}
+#item2 .my-pt a:hover{
+    border-color: #ff8b16;
+}
+#item3{background:rgb(20,156,225);}
+#item4{background:rgb(249,152,49);}
+#item5{background:rgb(10,255,60);}
+
+.bg2{background:rgba(255,255,255,0.8);position:fixed;z-index:5;top:0px;left:0px;margin-top:0px;}
+
+@media (min-width: 768px){
+    #menu{
+        margin-top: 48px;
+    }
+    .nav > li {
+        float: left;
+    }
+}
+@media (max-width: 425px) {
+    .my-logo img{
+        /*-webkit-clip-path: inset(0px 63px 0px 0px);*/
+        /*clip-path: inset(0px 63px 0px 0px);*/
+        -webkit-transform:scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+        transform:scale(.8);
+        transform-origin: 0 50%;
+    }
+    .my-tt{
+        position: absolute;
+        top: 25px;
+    }
+    .my-tt h1{
+        font-size: 30px;
+    }
+    .my-tt p{
+        font-size: 16px;
+    }
+}
